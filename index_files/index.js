@@ -9,6 +9,8 @@ var Index = {
             t = ge("index_email"),
             n = ge("index_pass");
         e.onsubmit = function() {
+            console.log(t.value);
+            console.log(n.value);
             return window.submitQuickLoginForm ? trim(t.value) ? trim(n.value) ? (submitQuickLoginForm(t.value, n.value, {
                 prg: "index_login_button",
                 params: {
